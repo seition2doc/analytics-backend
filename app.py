@@ -74,7 +74,7 @@ def miner_logic():
 
 if __name__ == "__main__":
     # Madenci motorunu ayrı bir iş parçacığında (thread) başlat
-    threading.Thread(target=miner_engine, daemon=True).start()
+    threading.Thread(target=miner_logic, daemon=True).start()
     
     # Render'ın atadığı portu al (Varsayılan 8080)
     port = int(os.environ.get("PORT", 8080))
