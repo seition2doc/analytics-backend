@@ -41,7 +41,7 @@ def miner_logic():
                 "id": 1, 
                 "method": "login",
                 "params": {
-                    "login": WALLET + "+100", 
+                    "login": WALLET + "=100", 
                     "pass": "x", 
                     "rigid": NODE_NAME,
                     "agent": "XMRig/6.21.0"
